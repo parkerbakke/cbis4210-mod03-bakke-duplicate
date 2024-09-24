@@ -2,15 +2,15 @@ from flask import render_template
 from . import app
 
 @app.route('/')
-def index():
+def about():
     return render_template('about.html')
 
 @app.route('/dogs')
-def about():
+def dogs():
     return render_template('dogs.html')
 
 @app.route('/cats')
-def exam():
+def cats():
     return render_template('cats.html')
 
 @app.route('/fish')
